@@ -11,6 +11,19 @@
   <title>{{ $title ?? config('app.name') }}</title>
 
   @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-626792533"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'AW-626792533');
+  </script>
 </head>
 
 <body class="font-sans antialiased" dir="{{(App::isLocale('ar') ? 'rtl' : 'ltr')}}">
