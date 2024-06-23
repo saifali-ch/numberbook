@@ -7,4 +7,5 @@ import.meta.glob([
     '../fonts/**',
 ]);
 
+window.Alpine = Alpine;
 Alpine.start()
