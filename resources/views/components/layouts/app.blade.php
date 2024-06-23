@@ -7,6 +7,7 @@
   <meta name="description" content="{{ $description }}">
 
   <link type="image/x-icon" rel="icon" href="{{ asset('favicon.ico') }}">
+  <link rel="apple-app-site-association" href="{{ url('apple-app-site-association') }}">
 
   <title>{{ $title ?? config('app.name') }}</title>
 
