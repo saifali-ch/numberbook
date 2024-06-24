@@ -44,7 +44,7 @@
                   x-transition:leave-start="opacity-100 transform translate-y-0"
                   x-transition:leave-end="opacity-0 transform -translate-y-2">
                 <template x-for="answer in item.answer">
-                  <li x-text="answer"></li>
+                  <li x-html="answer"></li>
                 </template>
               </ul>
             </div>
@@ -65,7 +65,7 @@
             question: '{{ __('What is the Saudi number book?') }}',
             answer: [
               '{{ __('The Saudi Number Book website is a Saudi website that helps you discover the identity of the caller and search by name to obtain the phone number of a person inside Saudi Arabia or in any country in the world online without downloading applications.') }}',
-              '{{ __('You can use the Number Book website via the online browser by entering the link to the official website of the Number Book application and searching by number or name to get the data you are looking for.') }}'
+              '{!! __('You can use the Number Book website via the online browser by entering the link to the official website of the Number Book application and searching by number or name to get the data you are looking for.') .' ' . __('<a target="_blank" href="https://apps.apple.com/us/app/%D9%83%D8%A7%D8%B4%D9%81-%D8%A7%D9%84%D8%A7%D8%B1%D9%82%D8%A7%D9%85-%D9%85%D8%B9%D8%B1%D9%81%D8%A9-%D8%A7%D8%B3%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%B5%D9%84/id1522059253">You can download the application via this link. </a>') !!}',
             ],
             page_url: '{{ route('q1') }}'
           },
