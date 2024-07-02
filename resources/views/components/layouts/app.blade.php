@@ -29,6 +29,7 @@
 
 <body class="font-sans antialiased" dir="{{(App::isLocale('ar') ? 'rtl' : 'ltr')}}">
 <x-header/>
+<x-app-ratings/>
 
 {{ $slot }}
 
