@@ -6,6 +6,18 @@
     {{ __("Are you tired of unwanted calls? \"Number Book\" is the ideal solution to know the caller's identity and block spam numbers in Saudi Arabia.") }}
   </x-slot>
 
+  <section class="bg-white md:px-10 pb-20">
+    <div class="flex flex-col md:flex-row-reverse items-center justify-center gap-5 mt-5">
+      <a href="https://apps.apple.com/us/app/%D9%83%D8%A7%D8%B4%D9%81-%D8%A7%D9%84%D8%A7%D8%B1%D9%82%D8%A7%D9%85-%D9%85%D8%B9%D8%B1%D9%81%D8%A9-%D8%A7%D8%B3%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%B5%D9%84/id1522059253" target="_blank">
+        <img src="{{ Vite::asset('resources/images/app-store.webp') }}" style="height: 64px; width: 100%" alt="App Store">
+      </a>
+
+      <a href="https://play.google.com/store/apps/details?id=com.nft.kashff&hl=en" target="_blank">
+        <img src="{{ Vite::asset('resources/images/google-play.webp') }}" style="height: 64px; width: 100%" alt="Google Play">
+      </a>
+    </div>
+  </section>
+
   <section class="bg-white px-5 md:px-10">
     <h1 class="text-2xl font-bold text-center text-red-600 lg:text-3xl">
       {{ __('Number Book Saudi Arabia: Your guide to caller ID and blocking unwanted numbers') }}
